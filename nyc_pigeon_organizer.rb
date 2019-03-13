@@ -6,7 +6,6 @@ def nyc_pigeon_organizer(data)
     stats.each do |stat,pigeons|
       pigeons.each do |pigeon|
         pigeon_list[pigeon] ||= {}
-        binding.pry
         pigeon_list[pigeon][stat_key] ||= []
         pigeon_list[pigeon][stat_key] << stat.to_s
       end
